@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/weather_cityname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="武汉市"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/weather_refersh"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignBottom="@+id/weather_cityname"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/weather_cityname"
+            android:background="@drawable/whole_refersh" />
+
+        <TextView
+            android:id="@+id/weather_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/weather_cityname"
+            android:layout_below="@+id/weather_cityname"
+            android:layout_marginTop="10dp"
+            android:text="晴天"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/weather_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/weather_city"
+            android:layout_below="@+id/weather_city"
+            android:layout_marginTop="10dp"
+            android:text="0-10"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/weather_temperature"
+            android:layout_toRightOf="@+id/weather_temperature"
+            android:text="@string/temperature"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+
+        <ImageView
+            android:id="@+id/weather_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignTop="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:src="@drawable/cityweather_more_n" />
+
+        <TextView
+            android:id="@+id/weather_currenttemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/weather_temperature"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/weather_currenttemperature"
+            android:layout_toRightOf="@+id/weather_currenttemperature"
+            android:text="@string/temperature_left"
+            android:textColor="@color/white"
+            android:textSize="100sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="8dp" >
+
+        <org.kymjs.aframe.widget.ClearEditText
+            android:id="@+id/seachCity"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/trangraybackground"
+            android:drawableLeft="@drawable/search_mirror" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/mCityListView"
+        android:layout_width="match_parent"
+        android:cacheColorHint="@null"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

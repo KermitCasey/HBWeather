@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wholebg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/transparent"
+        android:gravity="center_vertical" >
+
+        <ImageButton
+            android:id="@+id/add_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/fragcity_addcity" />
+
+        <ImageButton
+            android:id="@+id/user_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/fragcity_usercenter" />
+    </RelativeLayout>
+
+    <org.kymjs.aframe.widget.sliding.AbSlidingPlayView
+        android:id="@+id/mAbSlidingPlayView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:background="@color/transparent" >
+    </org.kymjs.aframe.widget.sliding.AbSlidingPlayView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="3"
+        android:background="@drawable/tranblackbackground"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/day01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="今天"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <RelativeLayout
+                android:id="@+id/layout01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/day01"
+                android:paddingLeft="8dp"
+                android:paddingRight="6dp" >
+
+                <ImageView
+                    android:id="@+id/day01_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/day01_low"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/day01_high"
+                    android:layout_toRightOf="@+id/day01_icon"
+                    android:gravity="right"
+                    android:padding="0dp"
+                    android:paddingRight="3dp"
+                    android:singleLine="true"
+                    android:text="11。"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/day01_high"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/day01_icon"
+                    android:gravity="right"
+                    android:paddingRight="3dp"
+                    android:text="3。"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/day01_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout01"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="多云"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/day02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="明天"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <RelativeLayout
+                android:id="@+id/layout02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/day02"
+                android:paddingLeft="8dp"
+                android:paddingRight="6dp" >
+
+                <ImageView
+                    android:id="@+id/day02_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/day02_low"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/day02_high"
+                    android:layout_toRightOf="@+id/day02_icon"
+                    android:gravity="right"
+                    android:padding="0dp"
+                    android:paddingRight="3dp"
+                    android:singleLine="true"
+                    android:text="11。"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/day02_high"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/day02_icon"
+                    android:gravity="right"
+                    android:paddingRight="3dp"
+                    android:text="3。"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/day02_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout02"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="多云"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/day03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:text="后天"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <RelativeLayout
+                android:id="@+id/layout03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/day03"
+                android:paddingLeft="8dp"
+                android:paddingRight="6dp" >
+
+                <ImageView
+                    android:id="@+id/day03_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/day03_low"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/day03_high"
+                    android:layout_toRightOf="@+id/day03_icon"
+                    android:gravity="right"
+                    android:padding="0dp"
+                    android:paddingRight="3dp"
+                    android:singleLine="true"
+                    android:text="11。"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/day03_high"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/day03_icon"
+                    android:gravity="right"
+                    android:paddingRight="3dp"
+                    android:text="3。"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/day03_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout03"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="多云"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

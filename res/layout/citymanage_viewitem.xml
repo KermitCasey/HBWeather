@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/weathericon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/weathericon_duoyun" />
+
+    <TextView
+        android:id="@+id/lowTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/weathericon"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/weathericon"
+        android:text="0"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/highTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/weathericon"
+        android:layout_alignLeft="@+id/lowTemperature"
+        android:text="0"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/citynm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weather"
+        android:layout_marginTop="8dp"
+        android:background="@color/black75PercentColor"
+        android:gravity="center"
+        android:text="武汉市"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weathericon"
+        android:layout_below="@+id/weathericon"
+        android:layout_marginTop="20dp"
+        android:text="晴天"
+        android:textColor="@color/black50PercentColor"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/city_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/whole_delete" />
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userinfo_background"
+    android:orientation="vertical" >
+
+    <include layout="@layout/head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                style="@style/userCenterItembg"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    style="@style/userCenterText"
+                    android:text="@string/usercenter_weather" />
+
+                <CheckBox
+                    android:id="@+id/usercenter_weather"
+                    style="@style/userCenterCheckBox" />
+            </RelativeLayout>
+
+            <View style="@style/userCenterSpaceLine" />
+
+            <RelativeLayout style="@style/userCenterItembg" >
+
+                <TextView
+                    style="@style/userCenterText"
+                    android:text="@string/usercenter_warn" />
+
+                <CheckBox
+                    android:id="@+id/usercenter_warn"
+                    style="@style/userCenterCheckBox" />
+            </RelativeLayout>
+
+            <View style="@style/userCenterSpaceLine" />
+
+            <RelativeLayout
+                android:id="@+id/usercenter_cache"
+                style="@style/userCenterItembg" >
+
+                <TextView
+                    style="@style/userCenterText"
+                    android:text="@string/usercenter_cache" />
+
+                <TextView
+                    style="@style/userCenterText"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:text="0.42M"
+                    android:textColor="@color/black50PercentColor" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/userCenterItembg"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    style="@style/userCenterText"
+                    android:text="@string/usercenter_time" />
+
+                <CheckBox
+                    android:id="@+id/usercenter_time"
+                    style="@style/userCenterCheckBox" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:paddingLeft="15dp"
+                android:text="@string/usercenter_timeset"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:id="@+id/usercenter_phone"
+                style="@style/userCenterItembg"
+                android:layout_marginTop="20dp" >
+
+                <ImageView
+                    android:id="@+id/mobile_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/usercenter_mobile" />
+
+                <TextView
+                    style="@style/userCenterText"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/mobile_tel"
+                    android:text="@string/usercenter_12121" />
+            </RelativeLayout>
+
+            <View style="@style/userCenterSpaceLine" />
+
+            <RelativeLayout style="@style/userCenterItembg" >
+
+                <TextView
+                    style="@style/userCenterText"
+                    android:text="@string/usercenter_update" />
+
+                <CheckBox
+                    android:id="@+id/usercenter_update"
+                    style="@style/userCenterCheckBox" />
+            </RelativeLayout>
+
+            <View style="@style/userCenterSpaceLine" />
+
+            <RelativeLayout
+                android:id="@+id/usercenter_feedback"
+                style="@style/userCenterItembg" >
+
+                <TextView
+                    style="@style/userCenterText"
+                    android:text="@string/usercenter_feedback" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/usercenter_logout"
+                style="@style/userCenterItembg"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    style="@style/userCenterText"
+                    android:text="@string/usercenter_logout" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

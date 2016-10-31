@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.casey.hbweather.InitActivity" >
+
+    <!--
+         <org.kymjs.aframe.widget.ViewPageScroll
+        android:id="@+id/homeViewPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/home_bottom_menu"
+        android:text="@string/hello_world" />
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_above="@+id/home_bottom_menu" >
+
+        <fragment
+            android:id="@+id/home_bodyOne"
+            android:name="com.casey.hbweather.ui.TravelWeatherFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/home_bodytwo"
+            android:name="com.casey.hbweather.ui.SpecialTravelFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/home_bodythree"
+            android:name="com.casey.hbweather.ui.CityWeatherFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment
+            android:id="@+id/home_bodyfour"
+            android:name="com.casey.hbweather.ui.SceneryForumFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/home_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_menu" />
+
+</RelativeLayout>

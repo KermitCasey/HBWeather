@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="60dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/special_travel_rt_text"
+            android:background="@drawable/search_kuang"
+            >
+			<RelativeLayout
+			    android:id="@+id/special_travel_rt_layout"
+			    android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerInParent="true">
+	            <ImageView
+	                android:id="@+id/special_travel_rt_imageView"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:layout_alignParentLeft="true"
+	                android:src="@drawable/search_mirror" />
+	
+	           <EditText
+	                android:id="@+id/special_travel_rt_editText"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:hint="@string/rt_input"
+	                android:background="@null"
+	                android:textColor="@color/black75PercentColor"
+	                android:layout_toRightOf="@+id/special_travel_rt_imageView" >
+					
+	           </EditText>
+			</RelativeLayout>
+			
+           <ImageView
+               android:id="@+id/special_travel_rt_hint"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="10dp"
+               android:visibility="gone"
+               android:src="@drawable/search_clear_normal" />
+            
+        </RelativeLayout>
+        
+        <TextView 
+            android:id="@+id/special_travel_rt_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:text="@string/rt_cancel"
+            android:visibility="gone"
+            android:textColor="@color/skyBlueColor">
+        </TextView>
+        
+    </RelativeLayout>
+
+    <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/special_travel_rt_list"
+        android:divider="@color/black90PercentColor"
+        android:dividerHeight="1dp"
+        android:cacheColorHint="@null"
+        android:minHeight="60dp"
+        ></ListView>
+    
+    <org.kymjs.aframe.ui.widget.KJListView
+        android:id="@+id/special_travel_rt_list_detail"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@null"
+        android:divider="@null" >
+    </org.kymjs.aframe.ui.widget.KJListView>
+    
+</LinearLayout>

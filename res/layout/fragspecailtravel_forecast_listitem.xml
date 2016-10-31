@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/tranblackconerbackground"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp" >
+        
+        <TextView
+            android:id="@+id/specail_tracel_forecast_listitem_text1"
+            android:text="20:00-23:00"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/specail_tracel_forecast_listitem_text2"
+            android:text="西风"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            > 
+        </TextView>
+
+        <TextView
+            android:id="@+id/specail_tracel_forecast_listitem_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/specail_tracel_forecast_listitem_text2"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@+id/specail_tracel_forecast_listitem_text4"
+            android:background="@null"
+            android:text="1级"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/specail_tracel_forecast_listitem_iamge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/specail_tracel_forecast_listitem_text2"
+            android:layout_alignTop="@+id/specail_tracel_forecast_listitem_text3"
+            android:src="@drawable/specialtravel_forecast_yun" />
+
+        <TextView
+            android:id="@+id/specail_tracel_forecast_listitem_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/specail_tracel_forecast_listitem_text4"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:text="阴"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/specail_tracel_forecast_listitem_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/specail_tracel_forecast_listitem_iamge"
+            android:background="@null"
+            android:text="11‘C"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+     
+    </RelativeLayout>
+
+</LinearLayout>

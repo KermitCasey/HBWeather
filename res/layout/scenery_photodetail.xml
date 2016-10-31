@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        layout="@layout/head" />
+
+    <ScrollView
+        android:id="@+id/photodelta"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/dizhi"
+                android:layout_centerHorizontal="true"
+                android:text="19:58" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/dizhi"
+                android:layout_marginLeft="22dp"
+                android:src="@drawable/dizhi_1" />
+
+            <TextView
+                android:id="@+id/dizhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/data"
+                android:layout_toRightOf="@+id/imageView3"
+                android:text="桥口公园位于汉口中山大道151号" />
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="fill_parent"
+                android:layout_height="500dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/scenery_1" />
+			
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/photo"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="-10dp"
+                android:src="@drawable/biaoti" />
+            
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/photo"
+                android:layout_marginBottom="2dp"
+                android:layout_alignParentLeft="true"
+                android:text="好冷啊！第一次在武汉过冬天，江边果然风大。求不感冒！！！#我在汉阳门#"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/dizhi"
+                android:layout_marginTop="10dp"
+                 android:scaleType="fitXY"
+                android:src="@drawable/dizhi_big" />
+
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView3"
+                android:layout_below="@+id/photo"
+                android:layout_marginTop="3dp"
+                android:text="2013-11-25" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView3"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/xiaoxi" />
+
+            <TextView
+                android:id="@+id/infonum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView1"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imageView4"
+                android:text="0评论"
+                android:textColor="#555555" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

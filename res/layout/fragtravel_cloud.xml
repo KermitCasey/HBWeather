@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wholebg"
+    android:orientation="vertical"
+    android:padding="15dp" >
+
+    <ImageView
+        android:id="@+id/mAbSlidingPlayView"
+        android:layout_above="@+id/cloud_time"
+        android:layout_width="fill_parent"
+        android:background="@color/transparent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="fill_parent" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/cloud_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tranblackbackground"
+        android:padding="8dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="时段:2014-12-09 18时-2014-12-12 21时"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

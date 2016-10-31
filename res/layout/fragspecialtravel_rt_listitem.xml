@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/tranblackbackground" >
+
+        <TextView
+            android:id="@+id/speccialtravel_rt_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="湿度(%)"
+            android:textColor="@color/white"
+            />
+        
+        <TextView
+            android:id="@+id/speccialtravel_rt_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/speccialtravel_rt_text"
+            android:layout_marginLeft="5dp"
+            android:textSize="16sp"
+            android:text="2时"
+            android:textColor="@color/white"
+            />
+        
+        <TextView
+            android:id="@+id/speccialtravel_rt_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/speccialtravel_rt_text"
+            android:layout_marginLeft="48dp"
+            android:textSize="16sp"
+            android:text="3时"
+            android:textColor="@color/white"
+            />
+        
+        <TextView
+            android:id="@+id/speccialtravel_rt_tex3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/speccialtravel_rt_text"
+            android:layout_marginLeft="91dp"
+            android:textSize="16sp"
+            android:text="4时"
+            android:textColor="@color/white"
+            />
+        
+        <TextView
+            android:id="@+id/speccialtravel_rt_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/speccialtravel_rt_text"
+            android:layout_marginLeft="134dp"
+            android:textSize="16sp"
+            android:text="5时"
+            android:textColor="@color/white"
+            />
+        
+        <TextView
+            android:id="@+id/speccialtravel_rt_text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/speccialtravel_rt_text"
+            android:layout_marginLeft="177dp"
+            android:textSize="16sp"
+            android:text="6时"
+            android:textColor="@color/white"
+            />
+        
+        <TextView
+            android:id="@+id/speccialtravel_rt_text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/speccialtravel_rt_text"
+            android:layout_marginLeft="220dp"
+            android:textSize="16sp"
+            android:text="7时"
+            android:textColor="@color/white"
+            />
+        
+        <TextView
+            android:id="@+id/speccialtravel_rt_text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/speccialtravel_rt_text"
+            android:layout_marginLeft="263dp"
+            android:textSize="16sp"
+            android:text="8时"
+            android:textColor="@color/white"
+            />
+        
+        <TextView
+            android:id="@+id/speccialtravel_rt_text8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_below="@+id/speccialtravel_rt_text"
+            android:layout_marginLeft="305dp"
+            android:textSize="16sp"
+            android:text="9时"
+            android:textColor="@color/white"
+            />
+        
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/speccialtravel_rt_chart1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

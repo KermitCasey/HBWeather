@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="groups">
+        <item>适宜</item>
+        <item>较适宜</item>
+        <item>较不适宜</item>
+        <item>不适宜</item>
+    </string-array> 
+</resources> 
